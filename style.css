@@ -9,19 +9,6 @@ body
     font-family: montserrat;
 }
 
-a {
-    color: inherit;
-    text-decoration: inherit;
-    transition: 0.25s all;
-    border-bottom: 1px solid transparent;
-}
-
-a:hover
-{
-    color: #D91706;
-    border-bottom: 1px solid #D91706;
-}
-
 h1
 {
     margin: 0;
@@ -76,6 +63,20 @@ header
 .navigation .entry
 {
     font-size: medium;
+}
+
+.link 
+{
+    color: inherit;
+    text-decoration: inherit;
+    transition: 0.25s all;
+    border-bottom: 1px solid transparent;
+}
+
+.link:hover
+{
+    color: #D91706;
+    border-bottom: 1px solid #D91706;
 }
 
 .hero
@@ -196,4 +197,43 @@ header
 {
     color: #D91706;
     font-weight: bold;
+}
+
+#languages-list {
+    position: relative;
+}
+
+#languages-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    width:30px;
+}
+
+#languages-list li, #languages-list a {
+    height: 30px;
+    display: block;
+}
+
+#japanese {
+    left:10px;
+    background-image: url('img/logo_japanese.png');
+    transition: background-image 0.3s ease-in-out;
+}
+
+#japanese:hover {
+    background-image: url('img/logo_japanese_hover.png');
+}
+
+#english {
+    left:60px;
+    background-image: url('img/logo_english.png');
+    transition: background-image 0.3s ease-in-out;
+}
+
+#english:hover {
+    background-image: url('img/logo_english_hover.png');
 }
